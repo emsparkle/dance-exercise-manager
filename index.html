@@ -251,10 +251,9 @@
                                         React.createElement('h3', {className: 'font-semibold text-lg text-gray-800'}, exercise.targetedMoves.length > 0 ? exercise.targetedMoves.join(', ') : 'General Exercise'),
                                         exercise.equipment && React.createElement('div', {className: 'flex items-center gap-1 text-amber-600'}, React.createElement(Wrench, {className: 'w-4 h-4'}), React.createElement('span', {className: 'text-xs font-medium'}, 'Equipment'))
                                     ),
-                                    exercise.principles.length > 0 && React.createElement('div', {className: 'mb-2'},
-                                        React.createElement('span', {className: 'text-sm font-medium text-purple-700'}, 'Principles: '),
-                                        React.createElement('span', {className: 'text-sm text-gray-600'}, exercise.principles.join(', '))
-                                    ),
+                                  exercise.principles.length > 0 && React.createElement('div', {className: 'mb-2'},
+                                    React.createElement('span', {className: 'text-sm text-gray-500'}, exercise.principles.join(', '))
+                                        ),
                                     React.createElement('div', {className: 'flex flex-wrap items-center gap-4 text-sm text-gray-500'},
                                         React.createElement('div', {className: 'flex items-center gap-1'}, React.createElement(Dumbbell, {className: 'w-4 h-4'}), React.createElement('span', null, exercise.exerciseType.join(', '))),
                                         React.createElement('div', {className: 'flex items-center gap-1'}, React.createElement('span', null, exercise.location.includes('across') ? '🏃‍♀️' : '🎯'), React.createElement('span', {className: 'capitalize'}, exercise.location)),
